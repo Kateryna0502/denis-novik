@@ -9,6 +9,88 @@ span,
 a {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: Open Sans;
+  max-width: 1440px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+  border-bottom: 1px solid #ccc; /* оця лінія під меню */
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  a {
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+    color: var(--text);
+
+    a:hover,
+    a:focus {
+      color: var(--main);
+    }
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--black);
+  margin-top: 12px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+  color: var(--black);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.about-me > :first-child {
+  margin-top: 0;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: #070707;
 }
 
 .light {
