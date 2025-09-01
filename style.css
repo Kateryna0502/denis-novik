@@ -31,6 +31,10 @@ body {
   max-width: 970px;
   margin: 0 auto;
 }
+img {
+  align-items: center;
+  margin: 0;
+}
 
 nav {
   display: flex;
@@ -73,6 +77,12 @@ h2 {
   text-align: center;
   color: var(--black);
 }
+.about,
+.portfolio {
+  background: var(--bg-gray);
+
+  background: #f6f6f6;
+}
 
 .about-me {
   display: flex;
@@ -94,5 +104,102 @@ p {
 }
 
 .light {
-  color: #f6f6f6;
+  color: rgba(102, 100, 100, 0.603);
+}
+
+.skills h2 {
+  margin-bottom: 20px;
+}
+
+.programs {
+  display: flex;
+  gap: 97px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+
+  img {
+    margin-bottom: 50px;
+  }
+
+  .li {
+    max-width: 170px;
+  }
+
+  p {
+    margin-top: 25px;
+    /* height: 38px; */
+    /* margin-bottom: 60px; */
+  }
+  .stars {
+    margin-top: 60px;
+  }
+}
+
+.portfolio p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration-line: underline;
+  color: #070707;
+  margin-bottom: 70px;
+}
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 112px 0 107px 0;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  button {
+    width: 180px;
+    height: 44px;
+    border: none;
+    border-radius: 22px;
+    background-color: #070707;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+    margin: 0;
+  }
+  button:hover,
+  button:focus {
+    opacity: 0.5;
+  }
+  ul {
+    display: flex;
+    max-width: 310px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 30px;
+
+    li {
+      a {
+        transition: all 0.1s ease-in;
+      }
+
+      a:hover svg {
+        opacity: 0.5;
+      }
+    }
+  }
+  .like {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey);
+  }
 }
